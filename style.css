@@ -30,6 +30,7 @@ header picture img{
 
 nav {
     background-color: black;
+   
 }
 
 nav ul{
@@ -37,6 +38,8 @@ nav ul{
     list-style: none;
     padding: 10px;
     margin-top: 1px;
+    
+    
 }
 
 nav ul li a {
@@ -45,6 +48,7 @@ nav ul li a {
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
+    
     
 }
 
@@ -64,12 +68,14 @@ main{
 main aside {
     background-color:rgb(236, 239, 241);
     margin: 1px;
-    width: 25%;
-    height: 35vh;
+    width: 15%;
     border-radius: 0px 5px 5px 0px;
     border: solid rgb(12, 12, 12) 1px;
+    position: relative;
+    
     
 }
+
 
 main aside ol {
     text-decoration: none;
@@ -78,11 +84,14 @@ main aside ol {
     font-family: 'Times New Roman', Times, serif;
     font-size: 17px;
     
+    
+    
 }
  main aside ol h4 {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 5px;
+   
     
 }
  
@@ -90,7 +99,9 @@ main aside ol label{
     display: flex;
     align-items: center;
     gap: 5px;
+    
 }
+
 
 
 aside a button {
@@ -114,6 +125,8 @@ aside a button:hover {
 main section {
     width: 100vw;
     margin: 2px;
+    background-color: rgb(236, 239, 241);
+    text-align: center;
 }
 
 
@@ -125,17 +138,38 @@ main section h2{
 
 main section article a{
     text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border: dotted black 2px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
 
+main section article p{
+    margin-top: 10px;
+    background-color: white;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-indent: 5px;
+}
+
+main section article a:hover {
+    background-color: white;
+    color: green;
 }
 
 #imagensLink {
-    background-color: black;
+    background-color: rgb(236, 239, 241);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 5px;
     gap: 10px;
+    height: 90vh;
 }
 
 #imagensLink figure img {
@@ -148,6 +182,7 @@ main section article a{
 #imagensLink a figure:hover  {
     scale: 1.05;
     transition: 0.5s;
+    
 }
 
 #imagensLink figure figurecaption h3 {
@@ -169,4 +204,41 @@ main section article a{
 
 #imagensLink a {
     text-decoration: none;
+}
+
+
+footer{
+    height: 30vh;
+    background-color: black;
+    margin: 2px;
+
+}
+
+footer address{
+
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 18px;
+
+
+}
+
+
+
+@media (max-width:1000px) {
+
+    main aside {
+    background-color:rgb(236, 239, 241);
+    margin: 1px;
+    width: 0%;
+    border-radius: 0px 5px 5px 0px;
+    border: solid rgb(12, 12, 12) 1px;
+    position: hidden;
+    z-index: -2;
+        
+    
+}
+    
+    
 }
