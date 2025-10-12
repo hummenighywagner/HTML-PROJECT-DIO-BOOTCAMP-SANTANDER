@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%);
+  width: 400px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 5% 0 5% 0;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+form fieldset {
+  padding: 5px;
+  margin: 5px;
+  width: 300px;
+  border-radius: 5px;
+
+  border-bottom: none;
+  border-right: none;
+}
+
+form fieldset label {
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form input {
+  padding: 8px;
+  margin: 5px;
+  width: 98%;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.title {
+  background-color: black;
+  width: 70%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.title h1 {
+  text-align: center;
+  color: white;
+}
+
+table {
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  border: double 4px;
+  border-radius: 10px;
+  margin-bottom: 20%;
+}
+
+table tr th {
+  font-size: large;
+}
+
+.tableTitle {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+table tr th,
+td {
+  padding: 10px;
+  width: 260px;
+  border: groove 3px;
+  border-radius: 10px;
+}
+
+table tr:hover{
+    background-color: yellow;
+}
+
+table tr:nth-child(even) {
+  background-color: rgb(136, 255, 0);
+}
+
+
+@media (max-width:1000px) {
+    html{
+        scale: 0.9;
+    }
+}
