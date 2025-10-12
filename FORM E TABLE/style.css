@@ -119,6 +119,7 @@ table tr:nth-child(even) {
   background-color: rgb(222, 228, 214);
 }
 
+
 @media (max-width:1000px) {
     html{
         scale: 0.9;
