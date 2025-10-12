@@ -13,7 +13,7 @@
       <h1>TAGS DE FORMULÁRIOS</h1>
     </div>
     <main>
-      <form action="#coleta" method="post">
+      <form action="#coleta" method="post" aria-describedby="Formulario de coleta de dados pessoais e profissionais, primeio preencha o nome completo, sua idade e contato seja telefone ou whatsapp, depois preencha seu email corporativo e endereço corporativo">
         <fieldset>
           <legend>Dados Pessoais</legend>
 
@@ -21,7 +21,7 @@
 
           <label for="nome" id="nome">Nome:</label>
           <br />
-          <input type="text" name="nome" id="nome" placeholder="Ex: José Amaro" required  pattern="[a-zA-Z]"/>
+          <input type="text" name="nome" id="nome" placeholder="Ex: José Amaro" required  />
 
           <br />
 
@@ -50,6 +50,14 @@
           <br />
           <input type="endereco" name="endereco" id="endereco" placeholder="Ex: Av. São Paulo" />
         </fieldset>
+
+          <div id="buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+          </div>
+
+
+          
       </form>
 
       <br />
